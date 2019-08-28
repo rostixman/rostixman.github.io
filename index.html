@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,19 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:url" content="mapsme://rostixman.github.io" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Guide's name | Author name" />
-    <meta property="og:description" content="Do more with MAPS.ME app - download guides and travel with no need for internet" />
-<!--    <meta property="og:image" content="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg" />-->
-<!--    <meta property="og:image" content="https://images.asos-media.com/products/belaya-hlopkovaya-oversize-rubashka-s-vorotnikom-na-pugovitse-asos-white/11508652-1-clouddancer" />-->
-<!--    <meta property="og:image" content="https://info-hit.ru/upload/resize_cache/iblock/f2e/800_1000_1/ezhednevnye_klienty_v_yandeks_direkt.jpg" />-->
-<!--    <meta property="og:image" content="https://android4us.ru/wp-content/uploads/logo-yandexlauncher.png" />-->
-    <meta property="og:image" content="http://rostixman.github.io/empty.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,500i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="game.css"/>
 
-    <title>hello</title>
+    <title>Game :)</title>
 </head>
 <body>
-    Hello World (test)
+    <div class="game">
+        <a href="#" class="game__action game__action_start">Start</a>
+
+        <div class="game__dice hide"></div>
+
+        <div class="game__word hide"></div>
+        <a href="#" class="game__action game__action_translation hide">Translate</a>
+
+        <div class="game__translation hide"></div>
+        <a href="#" class="game__action game__action_next hide">Next</a>
+    </div>
+
+    <div class="end hide">
+        Thank you for playing!
+        <br>
+        <a href="/" class="end__play-again">Play again</a>
+    </div>
+
+    <script src="game.js"></script>
 </body>
 </html>
