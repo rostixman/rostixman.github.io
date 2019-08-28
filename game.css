@@ -8,39 +8,108 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 
-.game {
-    height: 100vh;
+.game-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: #3370E4;
+    height: 100vh;
+}
+
+.game {
+    background: #3370E4;
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.game > div {
+    margin: 0 auto;
 }
 
 a {
     color: white;
     text-transform: uppercase;
+    display: inline-block;
 }
 
-.game__dice {
+.game .game__dice {
     background: white;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 10px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    opacity: 0.9;
+    position: relative;
+    flex-shrink: 0;
 }
 
-.game__action_start {
+.game .game__dice:after {
+    content: ' ';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: black;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+.game .game__dice:before {
+    content: ' ';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: black;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.game .game__translation,
+.game .game__word {
     font-size: 50px;
+    margin-top: 50px;
+    color: black;
+    background: white;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.game .game__translation {
+    color: white;
+    background: black;
+    margin-top: 30px;
+}
+
+.game .game__action_start {
+    font-size: 50px;
+    text-decoration: none;
+    border: 5px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.game .game__action_next,
+.game .game__action_translation {
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 .end {
@@ -56,7 +125,12 @@ a {
 }
 
 .end__play-again {
-    margin-top: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 .hide {
