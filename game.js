@@ -700,7 +700,8 @@ var game = function game() {
   var startButton = game.querySelector('.game__action_start');
   var translateButton = game.querySelector('.game__action_translation');
   var nextButton = game.querySelector('.game__action_next');
-  var playAgainButton = game.querySelector('.end__play-again');
+  var playAgainButton = document.querySelector('.end__play-again');
+  var fullscreenButton = document.querySelector('.fullscreen');
 
   var diceDiv = game.querySelector('.game__dice');
   var wordDiv = game.querySelector('.game__word');
@@ -747,7 +748,11 @@ var game = function game() {
   playAgainButton.addEventListener('click', function(e) {
     e.preventDefault();
     window.location.reload();
-  })
+  });
+
+  fullscreenButton.addEventListener('click', function(e) {
+    document.querySelector('.total-wrap').requestFullscreen();
+  });
 };
 
 var getWord = function getWord(wordDiv, diceDiv, translateButton, words) {
