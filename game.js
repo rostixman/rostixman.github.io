@@ -82,7 +82,7 @@ var game = function game() {
     },
     {
       "ru": "носить очки",
-      "en": "wear glass"
+      "en": "wear glasses"
     },
     {
       "ru": "стоматолог",
@@ -589,7 +589,7 @@ var game = function game() {
       "en": "windy"
     },
     {
-      "ru": "идет дождь.",
+      "ru": "Идёт дождь.",
       "en": "It's raining."
     },
     {
