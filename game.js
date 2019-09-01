@@ -153,8 +153,8 @@ var game = function game() {
       "en": "pronoun"
     },
     {
-      "ru": "тот",
-      "en": " этот"
+      "ru": "тот, этот",
+      "en": "that, this"
     },
     {
       "ru": "испытывающий жажду",
@@ -169,8 +169,8 @@ var game = function game() {
       "en": "outside"
     },
     {
-      "ru": "выходные (сб",
-      "en": " вс)"
+      "ru": "выходные (сб, вс)",
+      "en": "weekend"
     },
     {
       "ru": "49",
@@ -593,7 +593,7 @@ var game = function game() {
       "en": "It's raining."
     },
     {
-      "ru": "снег идет.",
+      "ru": "Снег идет.",
       "en": "It's snowing."
     },
     {
@@ -685,7 +685,7 @@ var game = function game() {
       "en": "changing room/fitting room"
     },
     {
-      "ru": "мне нужно идти.",
+      "ru": "Мне нужно идти.",
       "en": "I have to go."
     }
   ];
