@@ -31,8 +31,7 @@ var game = function game() {
 
     currentWord = getWord(wordDiv, diceDiv, translateButton, words);
 
-    // removeClass(translateButton, 'hide');
-    removeClass(nextButton, 'hide');
+    removeClass(translateButton, 'hide');
     removeClass(diceDiv, 'hide');
     removeClass(wordDiv, 'hide');
   });
@@ -52,8 +51,8 @@ var game = function game() {
     currentWord = getWord(wordDiv, diceDiv, translateButton, words);
 
     if (currentWord) {
-      addClass(translateButton, 'hide');
-      // addClass(nextButton, 'hide');
+      removeClass(translateButton, 'hide');
+      addClass(nextButton, 'hide');
       addClass(translationDiv, 'hide');
     } else {
       document.querySelector('.game-wrap').remove();
